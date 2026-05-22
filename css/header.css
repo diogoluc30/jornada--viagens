@@ -15,31 +15,59 @@ header {
 }
 
 .navigation-menu {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 input[type="checkbox"]:checked ~ nav {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-tertiary-color);
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 .list-links {
-    list-style: none;
+  list-style: none;
 }
 
 .list-links li {
-    margin: 16px 0;
+  margin: 16px 0;
 }
 
 .list-links li a {
-    color: var(--text-secondary-color);
-    text-decoration: none;
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: var(--menu-text-weight);
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-menu {
+        margin-top: 0;
+    }
+
+    .navigation-menu label {
+        display: none;
+    }
+
+    .navigation-menu nav {
+        display: block;
+    }
+
+    .list-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 467px;
+    }
+
+    .list-links li {
+        margin: 0;
+    }
 }
