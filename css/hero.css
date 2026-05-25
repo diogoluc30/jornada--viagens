@@ -1,0 +1,22 @@
+.hero-img {
+  background: url(../img/hero-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    background: url(../img/hero-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 620px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    background: url(../img/hero-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 620px;
+  }
+}
